@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="es" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Resolución Estratégica: Work Sample Analista SSr de Routing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #ffffff;
+            --meli-yellow: #ffe600;
+            --meli-blue: #2d3277;
+            --accent-amber: #d97706;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 10px 80px 10px;
+        }
+
+        .top-bar {
+            width: 1280px;
+            max-width: 95vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .top-bar .brand {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--meli-yellow);
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .top-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-control {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-control:hover {
+            background: var(--meli-yellow);
+            color: #000000;
+            border-color: var(--meli-yellow);
+        }
+
+        .deck-container {
+            width: 1280px;
+            max-width: 95vw;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .slide-container {
+            width: 1280px;
+            max-width: 95vw;
+            height: 720px;
+            background-color: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            padding: 36px 44px;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        body.mode-presentation .slide-container {
+            display: none;
+        }
+
+        body.mode-presentation .slide-container.active {
+            display: flex;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+            height: 48px;
+        }
+
+        .slide-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--bg-dark);
+            letter-spacing: -0.4px;
+            text-transform: uppercase;
+        }
+
+        .slide-tag {
+            background-color: var(--meli-yellow);
+            color: #000000;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 5px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 14px;
+            overflow: hidden;
+        }
+
+        h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p, li {
+            font-size: 12.5px;
+            line-height: 1.45;
+            color: #475569;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 14px 18px;
+        }
+
+        .card-accent {
+            border-left: 4px solid var(--meli-yellow);
+            background-color: #fffdf0;
+        }
+
+        .card-danger {
+            border-left: 4px solid #ef4444;
+            background-color: #fef2f2;
+        }
+
+        .card-success {
+            border-left: 4px solid #10b981;
+            background-color: #ecfdf5;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10.5px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            padding: 7px 8px;
+            font-size: 9.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        td {
+            padding: 5.5px 8px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #334155;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 9.5px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .badge-red {
+            background-color: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fca5a5;
+        }
+
+        .badge-green {
+            background-color: #ecfdf5;
+            color: #059669;
+            border: 1px solid #6ee7b7;
+        }
+
+        .badge-amber {
+            background-color: #fffbebfb;
+            color: #d97706;
+            border: 1px solid #fcd34d;
+        }
+
+        .badge-blue {
+            background-color: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #93c5fd;
+        }
+
+        .title-slide {
+            background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
+            color: #ffffff;
+            justify-content: space-between;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .title-slide::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #ffe600 0%, #ff9900 100%);
+        }
+
+        .title-hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            align-items: center;
+            height: 100%;
+        }
+
+        .title-content h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 38px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+
+        .title-content h1 span {
+            color: var(--meli-yellow);
+        }
+
+        .title-subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .author-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: inline-flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .author-info div:first-child {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .author-info div:last-child {
+            font-size: 12px;
+            color: var(--meli-yellow);
+            font-weight: 600;
+        }
+
+        .title-image-wrapper {
+            width: 100%;
+            height: 380px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 230, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .title-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0) 60%, rgba(15, 23, 42, 0.8) 100%);
+        }
+
+        .title-image-badge {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            z-index: 10;
+            background: rgba(15, 23, 42, 0.9);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--meli-yellow);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .message-box {
+            background-color: #1e293b;
+            color: #f8fafc;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            border-left: 4px solid var(--meli-yellow);
+        }
+
+        .footer-note {
+            font-size: 10px;
+            color: #94a3b8;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 8px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #ffffff;
+            z-index: 100;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-btn {
+            background: var(--meli-yellow);
+            color: #000000;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .nav-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .slide-counter {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body class="mode-presentation">
+
+    <div class="top-bar">
+        <div class="brand">
+            <i class="fa-solid fa-truck-fast text-amber-400"></i>
+            MERCADO LIBRE | WORK SAMPLE EVALUATION
+        </div>
+        <div class="top-controls">
+            <button class="btn-control" onclick="toggleViewMode()">
+                <i class="fa-solid fa-table-cells"></i> <span id="mode-text">Ver Todas las Slides</span>
+            </button>
+            <button class="btn-control" onclick="toggleFullScreen()">
+                <i class="fa-solid fa-expand"></i> Pantalla Completa
+            </button>
+        </div>
+    </div>
+
+    <div class="deck-container">
+
+        <div class="slide-container title-slide active" id="slide1">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 800; color: var(--meli-yellow); letter-spacing: 2px;">
+                    MERCADO LIBRE | SENIOR OPERATIONS & SUPPLY CHAIN
+                </div>
+                <div style="color: #94a3b8; font-size: 12px; font-weight: 600;">EVALUACIÓN ESTRATÉGICA 2026</div>
+            </div>
+
+            <div class="title-hero-grid">
+                <div class="title-content">
+                    <h1>Resolución Estratégica y Operativa:<br><span>Work Sample Analista SSr de Routing</span></h1>
+                    <div class="title-subtitle">Optimization of Last Mile, Reverse Logistics & Heavy & Bulky Operations</div>
+                    
+                    <div class="author-box">
+                        <div class="author-info">
+                            <div>Juan Pablo Soto Maldonado</div>
+                            <div>Ingeniero Industrial | Supply Chain Lead</div>
+                        </div>
+                        <div style="height: 30px; width: 1px; background-color: rgba(255,255,255,0.2);"></div>
+                        <div style="color: #cbd5e1; font-size: 12px;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--meli-yellow);"></i> México Operations<br>
+                            <i class="fa-solid fa-chart-line" style="color: var(--meli-yellow);"></i> BigQuery & Routing Strategy
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200" alt="Mercado Libre Logistics Fleet" onerror="this.src='https://placehold.co/600x400/0f172a/ffe600?text=Mercado+Libre+Logistics'">
+                    <div class="title-image-badge">
+                        <i class="fa-solid fa-bolt text-yellow-400"></i> Flota Electrónica & Last Mile MELI
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note" style="border-top-color: rgba(255,255,255,0.1); color: #64748b;">
+                <span>Confidencial - Uso Interno Mercado Libre</span>
+                <span>Diapositiva 1 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide2">
+            <div class="slide-header">
+                <h2 class="slide-title">1. Análisis de KPIs Operativos (Semana 23)</h2>
+                <span class="slide-tag">REPORTE REACOMODADO & EVALUACIÓN DE BRECHAS</span>
+            </div>
+
+            <div class="content-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ruta ID</th>
+                            <th>Tipo</th>
+                            <th>Paradas</th>
+                            <th>DS % (Min 75% LM / 60% Rev)</th>
+                            <th>CPS (Max $55)</th>
+                            <th>Pick-up % (Min 88%)</th>
+                            <th>Km Rec.</th>
+                            <th>Rend. Est. (km/L)</th>
+                            <th>CPK ($/km)</th>
+                            <th>Evaluación de Brecha & Prioridad Operativa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #fef2f2;">
+                            <td><strong>MTY-02</strong></td>
+                            <td>Last Mile</td>
+                            <td>820</td>
+                            <td><span class="badge badge-red">61.4%</span></td>
+                            <td><span class="badge badge-red">$62.40</span></td>
+                            <td>95.7%</td>
+                            <td>54 km</td>
+                            <td><strong>6.8 km/L</strong></td>
+                            <td><strong>$947.55</strong></td>
+                            <td><span class="badge badge-red">PRIORIDAD 1 CRÍTICA</span> Peor DS y mayor CPS. Dispersión y ralentí alto.</td>
+                        </tr>
+                        <tr style="background-color: #fff1f2;">
+                            <td><strong>REVER-02</strong></td>
+                            <td>Reversa</td>
+                            <td>385</td>
+                            <td><span class="badge badge-red">54.6%</span></td>
+                            <td><span class="badge badge-red">$81.30</span></td>
+                            <td>N/A</td>
+                            <td>52 km</td>
+                            <td><strong>7.0 km/L</strong></td>
+                            <td><strong>$601.93</strong></td>
+                            <td><span class="badge badge-red">PRIORIDAD 2</span> DS más bajo de la red y CPS extremo.</td>
+                        </tr>
+                        <tr style="background-color: #fff1f2;">
+                            <td><strong>REVER-01</strong></td>
+                            <td>Reversa</td>
+                            <td>430</td>
+                            <td><span class="badge badge-red">58.2%</span></td>
+                            <td><span class="badge badge-red">$74.10</span></td>
+                            <td>N/A</td>
+                            <td>48 km</td>
+                            <td><strong>7.2 km/L</strong></td>
+                            <td><strong>$663.81</strong></td>
+                            <td><span class="badge badge-red">PRIORIDAD 3</span> Incumple umbral DS (&lt;60%) y sobrecosto alto.</td>
+                        </tr>
+                        <tr style="background-color: #fffbebfb;">
+                            <td><strong>CDMX-S01</strong></td>
+                            <td>Last Mile</td>
+                            <td>980</td>
+                            <td><span class="badge badge-amber">68.3%</span></td>
+                            <td>$51.60</td>
+                            <td>97.4%</td>
+                            <td>61 km</td>
+                            <td><strong>7.8 km/L</strong></td>
+                            <td><strong>$828.98</strong></td>
+                            <td><span class="badge badge-amber">PRIORIDAD 4</span> DS bajo afectando alto volumen (980 paradas).</td>
+                        </tr>
+                        <tr style="background-color: #fffbebfb;">
+                            <td><strong>PUE-01</strong></td>
+                            <td>Last Mile</td>
+                            <td>950</td>
+                            <td><span class="badge badge-amber">70.5%</span></td>
+                            <td>$48.20</td>
+                            <td>92.0%</td>
+                            <td>69 km</td>
+                            <td><strong>8.0 km/L</strong></td>
+                            <td><strong>$663.62</strong></td>
+                            <td><span class="badge badge-amber">PRIORIDAD 5</span> Incumple umbral mínimo de entrega (75%).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MTY-01</strong></td>
+                            <td>Last Mile</td>
+                            <td>1,745</td>
+                            <td>79.8%</td>
+                            <td>$36.70</td>
+                            <td><span class="badge badge-amber">88.3%</span></td>
+                            <td>115 km</td>
+                            <td><strong>8.5 km/L</strong></td>
+                            <td><strong>$556.88</strong></td>
+                            <td><span class="badge badge-blue">MONITOREO</span> Pick-up en límite de benchmark (88%).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CDMX-N01</strong></td>
+                            <td>Last Mile</td>
+                            <td>1,842</td>
+                            <td>76.4%</td>
+                            <td>$38.20</td>
+                            <td>94.2%</td>
+                            <td>72 km</td>
+                            <td><strong>8.2 km/L</strong></td>
+                            <td><strong>$977.28</strong></td>
+                            <td><span class="badge badge-green">OK MIN</span> Sobre umbral mínimo, lejos de meta 97%.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CDMX-N02</strong></td>
+                            <td>Last Mile</td>
+                            <td>2,105</td>
+                            <td>81.1%</td>
+                            <td>$34.80</td>
+                            <td>91.8%</td>
+                            <td>88 km</td>
+                            <td><strong>8.8 km/L</strong></td>
+                            <td><strong>$832.43</strong></td>
+                            <td><span class="badge badge-green">OK</span> Desempeño dentro de estándar operativo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GDL-01 / 02</strong></td>
+                            <td>Last Mile</td>
+                            <td>2,850 Total</td>
+                            <td>&gt;83.6%</td>
+                            <td>&lt;$31.10</td>
+                            <td>&gt;90.5%</td>
+                            <td>199 km</td>
+                            <td><strong>10.5 km/L</strong></td>
+                            <td><strong>$445.40</strong></td>
+                            <td><span class="badge badge-green">BENCHMARK</span> Rutas modelo de alta eficiencia.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>QRO-01</strong></td>
+                            <td>Last Mile</td>
+                            <td>1,120</td>
+                            <td>82.0%</td>
+                            <td>$32.90</td>
+                            <td>89.6%</td>
+                            <td>78 km</td>
+                            <td><strong>9.5 km/L</strong></td>
+                            <td><strong>$472.41</strong></td>
+                            <td><span class="badge badge-green">OK</span> Cumple indicadores de red.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="card card-accent" style="margin-top: 4px; padding: 8px 12px;">
+                    <div style="font-size: 10.5px; font-weight: 700; color: #0f172a; margin-bottom: 2px;">CRITERIO DE MODELADO &amp; FÓRMULAS DE FLOTA:</div>
+                    <div style="font-size: 10px; color: #475569;">
+                        • <strong>CPK ($/km)</strong> = (Paradas Totales × CPS) / Km Recorridos. <em>Ejemplo MTY-02:</em> (820 × $62.40) / 54 km = <strong>$947.55 / km</strong>.<br>
+                        • <strong>Rend. Est. (km/L):</strong> Estimado por factor <em>Stop &amp; Go</em> y ralentí del motor. Rutas dispersas sufren castigo (6.8 km/L) vs. rutas continuas (10.5 km/L).
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Evaluación de KPIs Sem. 23 - Mercado Libre México</span>
+                <span>Diapositiva 2 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide3">
+            <div class="slide-header">
+                <h2 class="slide-title">1. Análisis de KPIs Operativos (Preguntas 1.1 - 1.4)</h2>
+                <span class="slide-tag">DIAGNÓSTICO & COMUNICACIÓN</span>
+            </div>
+
+            <div class="content-area">
+                <div class="grid-2">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div class="card card-danger">
+                            <h3><i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i> 1.1 Rutas Fuera de Benchmark</h3>
+                            <p><strong>Prioridad 1: MTY-02</strong> (DS 61.4%, CPS $62.40). Destruye valor en margen y servicio.<br>
+                            <strong>Prioridad 2: REVER-01 y REVER-02</strong> (DS &lt;58.2%, CPS &gt;$74.10). Incumplen umbrales de logística reversa.<br>
+                            <strong>Prioridad 3: CDMX-S01 y PUE-01</strong> (DS &lt;70.5%). Alto volumen afectado sin cumplir entrega mínima (75%).</p>
+                        </div>
+
+                        <div class="card card-accent">
+                            <h3><i class="fa-solid fa-rotate-left" style="color: #d97706;"></i> 1.3 Evaluación Logística Reversa</h3>
+                            <p><strong>No es esperado; representa una ALERTA CRÍTICA.</strong> Caer bajo el 60% genera viajes en vacío costosos ($74-$81 CPS).<br>
+                            <strong>Acción esta semana:</strong> Activar confirmación previa de presencia vía SMS/Push 2h antes de enrutar la recolección.</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div class="card">
+                            <h3><i class="fa-solid fa-magnifying-glass-chart" style="color: #2563eb;"></i> 1.2 Hipótesis Diagnósticas (MTY-02)</h3>
+                            <ul>
+                                <li style="margin-bottom: 6px;"><strong>1. Dispersión Geográfica:</strong> Recorre 54 km para solo 820 paradas (baja densidad). <em>Validación:</em> Heatmap de coordenadas GPS de entrega.</li>
+                                <li style="margin-bottom: 6px;"><strong>2. Ausencia de Destinatario:</strong> Fallas en ubicabilidad en primer intento. <em>Validación:</em> Reporte de motivos de no entrega en App del chofer.</li>
+                                <li><strong>3. Tráfico / Incompatibilidad:</strong> Tiempos muertos elevados por zona urbana. <em>Validación:</em> Telemetría de tiempo de traslado vs. tiempo en puerta.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" style="background-color: #0f172a; color: #ffffff;">
+                            <h3 style="color: #ffe600;"><i class="fa-solid fa-comment-dots"></i> 1.4 Mensaje al Team Leader (Máx. 5 Líneas)</h3>
+                            <div class="message-box" style="margin-top: 6px; padding: 10px;">
+                                "TL: Sem 23 refleja desvíos críticos en MTY-02 (DS 61.4%, CPS $62.40) y Reversa (DS &lt;58%). Acciones hoy: 1) Rediseñar el polígono geográfico de MTY-02 para concentrar densidad. 2) Implementar pre-contacto obligatorio al cliente en Reversa antes de liberar rutas."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Análisis Operativo & Acción Inmediata</span>
+                <span>Diapositiva 3 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide4">
+            <div class="slide-header">
+                <h2 class="slide-title">2. Resolución de Incidencias Operativas (Casos A y B)</h2>
+                <span class="slide-tag">VENTANA DE CORTE: 08:30 A.M.</span>
+            </div>
+
+            <div class="content-area">
+                <div class="grid-2">
+                    <div class="card" style="border-top: 4px solid #ef4444; height: 100%; display: flex; flex-direction: column;">
+                        <div style="font-size: 11px; font-weight: 800; color: #ef4444; margin-bottom: 4px;">CASO A — ERROR DE DATOS EN SISTEMA</div>
+                        <h3 style="font-size: 18px; margin-bottom: 10px;">187 Paquetes Rechazados (CDMX-N01)</h3>
+
+                        <div style="flex-grow: 1;">
+                            <p><strong>2.1 Primeros 3 Pasos de Diagnóstico (antes de corte):</strong></p>
+                            <ol style="padding-left: 18px; margin-bottom: 12px; font-size: 12.5px; color: #334155;">
+                                <li style="margin-bottom: 4px;"><strong>Verificar Log IT:</strong> Validar el despliegue de la actualización de geocodificación de ayer a las 17:00 h.</li>
+                                <li style="margin-bottom: 4px;"><strong>Ejecutar Rollback:</strong> Solicitar reversión inmediata del parámetro de polígono a la versión estable previa.</li>
+                                <li><strong>Re-procesar Corrida:</strong> Lanzar re-asignación masiva para los 187 paquetes antes de las 08:15 h.</li>
+                            </ol>
+
+                            <div class="card card-accent" style="padding: 10px;">
+                                <p style="font-size: 12px; margin: 0;"><strong>2.2 Plan de Contingencia:</strong><br>
+                                Inyectar los paquetes vía archivo plano usando coordenadas centroidales de Código Postal e integrarlos como <em>over-fill</em> en CDMX-N01/N02, o despacharlos a las 09:30 h mediante un <em>Wave</em> secundario On-Demand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="border-top: 4px solid #f59e0b; height: 100%; display: flex; flex-direction: column;">
+                        <div style="font-size: 11px; font-weight: 800; color: #f59e0b; margin-bottom: 4px;">CASO B — CAPACIDAD EXCEDIDA HEAVY & BULKY</div>
+                        <h3 style="font-size: 18px; margin-bottom: 10px;">Ruta HB-CDMX-04 (34 Envíos vs Cap. 28)</h3>
+
+                        <div style="flex-grow: 1;">
+                            <p><strong>2.3 Criterios para Reasignar 6 Paquetes:</strong></p>
+                            <ul style="margin-bottom: 12px; font-size: 12.5px; color: #334155;">
+                                <li style="margin-bottom: 5px;"><i class="fa-solid fa-clock" style="color: #f59e0b;"></i> <strong>1. SLA Holgado:</strong> Seleccionar envíos con compromiso de entrega para el día siguiente.</li>
+                                <li style="margin-bottom: 5px;"><i class="fa-solid fa-user" style="color: #f59e0b;"></i> <strong>2. Tipo de Cliente:</strong> Excluir únicamente paquetes de Clientes NO-VIP.</li>
+                                <li style="margin-bottom: 5px;"><i class="fa-solid fa-box" style="color: #f59e0b;"></i> <strong>3. Volumen m³:</strong> Retirar los 6 paquetes de mayor volumen sobrante para liberar la bahía de inmediato.</li>
+                            </ul>
+
+                            <div class="card card-success" style="padding: 10px;">
+                                <p style="font-size: 12px; margin: 0;"><strong>Redistribución Operativa:</strong><br>
+                                Transferir físicamente los 6 paquetes descartados a una unidad de auxilio H&B On-Demand programada para el bloque de salida de las 10:00 a.m.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Gestión de Incidencias Operativas en Tiempo Real</span>
+                <span>Diapositiva 4 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide5">
+            <div class="slide-header">
+                <h2 class="slide-title">2. Resolución de Incidencias Operativas (Caso C & Priorización)</h2>
+                <span class="slide-tag">EVALUACIÓN MULTI-INCIDENCIA (07:45 A.M.)</span>
+            </div>
+
+            <div class="content-area">
+                <div class="card card-accent" style="margin-bottom: 12px;">
+                    <h3><i class="fa-solid fa-list-ol" style="color: #0f172a;"></i> 2.4 Lógica y Orden de Atención Simultánea (07:45 A.M.)</h3>
+                    <div class="grid-3" style="margin-top: 8px;">
+                        <div style="background-color: #ffffff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                            <span class="badge badge-red" style="margin-bottom: 4px;">1° ATENCIÓN (07:45 H)</span>
+                            <div style="font-weight: 700; font-size: 13px; color: #0f172a;">CASO C (CDMX-S01 Sin Chofer)</div>
+                            <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Riesgo directo sobre 980 paradas y 3 clientes Premium (&lt;14:00 h). Requiere asignación física en patio antes de salida.</div>
+                        </div>
+
+                        <div style="background-color: #ffffff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                            <span class="badge badge-amber" style="margin-bottom: 4px;">2° ATENCIÓN (08:00 H)</span>
+                            <div style="font-weight: 700; font-size: 13px; color: #0f172a;">CASO A (Error 187 Paquetes)</div>
+                            <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Riesgo masivo. Solución de software rápida (rollback) en consola antes de la ventana de corte (08:30 h).</div>
+                        </div>
+
+                        <div style="background-color: #ffffff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                            <span class="badge badge-blue" style="margin-bottom: 4px;">3° ATENCIÓN (08:15 H)</span>
+                            <div style="font-weight: 700; font-size: 13px; color: #0f172a;">CASO B (Sobrecupo H&B)</div>
+                            <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Ajuste local. La unidad ya está cargando; bajar 6 paquetes de rampa no frena la matriz general de ruteo.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #2563eb;">
+                    <div style="font-size: 11px; font-weight: 800; color: #2563eb; margin-bottom: 4px;">CASO C — RUTA CDMX-S01 SIN CONDUCTOR</div>
+                    <h3 style="font-size: 16px; margin-bottom: 8px;">2.5 Plan de Acción Ejecutable en 30 Minutos</h3>
+
+                    <div class="grid-3">
+                        <div class="card" style="background-color: #f8fafc; padding: 10px;">
+                            <div style="font-weight: 700; color: #2563eb; font-size: 12px; margin-bottom: 2px;">Paso 1: Asignación Retén</div>
+                            <p style="font-size: 11.5px; margin: 0;">Asignar de inmediato la ruta completa al conductor de reserva (<em>Standby/Retén</em>) presente en el patio operativo.</p>
+                        </div>
+
+                        <div class="card" style="background-color: #f8fafc; padding: 10px;">
+                            <div style="font-weight: 700; color: #2563eb; font-size: 12px; margin-bottom: 2px;">Paso 2: Aislamiento VIP</div>
+                            <p style="font-size: 11.5px; margin: 0;">Si no hay retén, aislar las paradas de los 3 clientes Premium e insertarlas prioritariamente en rutas vecinas que salgan &lt;08:15 h.</p>
+                        </div>
+
+                        <div class="card" style="background-color: #f8fafc; padding: 10px;">
+                            <div style="font-weight: 700; color: #2563eb; font-size: 12px; margin-bottom: 2px;">Paso 3: Liberación Patio</div>
+                            <p style="font-size: 11.5px; margin: 0;">Notificar al Control Tower la actualización de la unidad para la entrega inmediata de llaves y despacho en rampa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Priorización Operativa & Protección SLA Premium</span>
+                <span>Diapositiva 5 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide6">
+            <div class="slide-header">
+                <h2 class="slide-title">3. Priorización y Toma de Decisiones (Ruteo Nocturno)</h2>
+                <span class="slide-tag">CAPACIDAD MAX: 4 RUTAS (CORTE 20:00 H)</span>
+            </div>
+
+            <div class="content-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Prioridad</th>
+                            <th>Ruta ID</th>
+                            <th>Tipo</th>
+                            <th>Paradas</th>
+                            <th>SLA Máx.</th>
+                            <th>Clientes VIP</th>
+                            <th>Complejidad</th>
+                            <th>Estado Data</th>
+                            <th>Decisión y Razonamiento Estratégico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #fef2f2;">
+                            <td><span class="badge badge-red">1° SELECCIÓN</span></td>
+                            <td><strong>CDMX-HB-08</strong></td>
+                            <td>H&B</td>
+                            <td>195</td>
+                            <td><span class="badge badge-red">Hoy &lt;21h</span></td>
+                            <td><strong>15</strong></td>
+                            <td>Alta</td>
+                            <td><span class="badge badge-green">OK</span></td>
+                            <td><strong>URGENCIA MÁXIMA:</strong> Vence hoy, concentra la mayor cantidad de VIPs (15).</td>
+                        </tr>
+                        <tr style="background-color: #fffbebfb;">
+                            <td><span class="badge badge-amber">2° SELECCIÓN</span></td>
+                            <td><strong>MTY-HB-02</strong></td>
+                            <td>H&B</td>
+                            <td>280</td>
+                            <td>Mañana 10h</td>
+                            <td>8</td>
+                            <td>Alta</td>
+                            <td><span class="badge badge-red">Incompleta</span></td>
+                            <td><strong>SLA APRETADO:</strong> Ventana matutina de 10:00 h. Requiere sanear data hoy.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-green">3° SELECCIÓN</span></td>
+                            <td><strong>GDL-LM-07</strong></td>
+                            <td>Last Mile</td>
+                            <td>1,340</td>
+                            <td>Mañana 13h</td>
+                            <td>12</td>
+                            <td>Media</td>
+                            <td><span class="badge badge-green">OK</span></td>
+                            <td><strong>ALTO IMPACTO:</strong> 1,340 paradas y 12 VIPs con promesa a mediodía.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-green">4° SELECCIÓN</span></td>
+                            <td><strong>PUE-LM-03</strong></td>
+                            <td>Last Mile</td>
+                            <td>860</td>
+                            <td>Mañana 18h</td>
+                            <td>3</td>
+                            <td>Media</td>
+                            <td><span class="badge badge-green">OK</span></td>
+                            <td><strong>MAYOR ESCALA:</strong> Se prioriza sobre QRO por volumen (860 paradas) y data OK.</td>
+                        </tr>
+                        <tr style="background-color: #f8fafc; color: #94a3b8;">
+                            <td><span class="badge badge-blue">DIFERIDA 1</span></td>
+                            <td><strong>QRO-LM-05</strong></td>
+                            <td>Last Mile</td>
+                            <td>950</td>
+                            <td>Mañana 16h</td>
+                            <td>5</td>
+                            <td>Baja</td>
+                            <td>OK</td>
+                            <td>Diferir a la corrida de las 06:00 a.m. (SLA holgado a las 16:00 h).</td>
+                        </tr>
+                        <tr style="background-color: #f8fafc; color: #94a3b8;">
+                            <td><span class="badge badge-blue">DIFERIDA 2</span></td>
+                            <td><strong>CDMX-RV-05</strong></td>
+                            <td>Reversa</td>
+                            <td>520</td>
+                            <td>Pasado mañana</td>
+                            <td>0</td>
+                            <td>Baja</td>
+                            <td>OK</td>
+                            <td>Diferir 24 horas (SLA a 48h y 0 VIPs). Impacto cero en el negocio.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="grid-2" style="margin-top: 4px;">
+                    <div class="card card-accent" style="padding: 10px;">
+                        <p style="font-size: 11.5px; margin: 0;"><strong>3.2 Inclusión MTY-HB-02 (Data Incompleta):</strong><br>
+                        Sí se incluye. <em>Riesgos:</em> Ruteo erróneo o fallas en secuencia. <em>Mitigación:</em> Sanitización rápida con coordenadas centroidales de CP y validación en la app móvil del chofer.</p>
+                    </div>
+
+                    <div class="card card-danger" style="padding: 10px;">
+                        <p style="font-size: 11.5px; margin: 0;"><strong>3.3 Escalación CDMX-HB-08 (Hoy &lt;21:00 h):</strong><br>
+                        Es un desvío que requiere atención inmediata. Se escala al <strong>TL de Control Tower / Floor Operations</strong> enviando: ID de ruta, 195 paquetes, 15 VIPs y solicitud de despacho express &lt;19:00 h.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Matriz de Ruteo Nocturno & Gestión de Capacidad</span>
+                <span>Diapositiva 6 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide7">
+            <div class="slide-header">
+                <h2 class="slide-title">4. Propuesta de Mejora Continua (Caso MTY-02)</h2>
+                <span class="slide-tag">ANÁLISIS HISTÓRICO & REDISEÑO DE POLÍGONOS</span>
+            </div>
+
+            <div class="content-area">
+                <div class="grid-2">
+                    <div>
+                        <div style="font-size: 11px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">HISTÓRICO MTY-02 (8 SEMANAS) CON DIAGNÓSTICO</div>
+                        <table style="font-size: 10px;">
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Paradas</th>
+                                    <th>DS %</th>
+                                    <th>CPS</th>
+                                    <th>Km</th>
+                                    <th>Observación & Diagnóstico</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sem 15</td>
+                                    <td>950</td>
+                                    <td>64.1%</td>
+                                    <td>$59.80</td>
+                                    <td>56 km</td>
+                                    <td>Deficiencia estructural de origen.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 16</td>
+                                    <td>880</td>
+                                    <td>61.8%</td>
+                                    <td>$63.20</td>
+                                    <td>58 km</td>
+                                    <td>Lluvia agrava CPS, base defectuosa.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 17</td>
+                                    <td>920</td>
+                                    <td>63.5%</td>
+                                    <td>$61.00</td>
+                                    <td>55 km</td>
+                                    <td>Estancamiento constante en ~63% DS.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 18</td>
+                                    <td>1,010</td>
+                                    <td>58.9%</td>
+                                    <td>$67.40</td>
+                                    <td>61 km</td>
+                                    <td>Feria local desploma DS a mínimo.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 19</td>
+                                    <td>840</td>
+                                    <td>62.2%</td>
+                                    <td>$60.50</td>
+                                    <td>53 km</td>
+                                    <td>Operación normal con desvío grave.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 20</td>
+                                    <td>975</td>
+                                    <td>65.0%</td>
+                                    <td>$57.90</td>
+                                    <td>57 km</td>
+                                    <td>Pico máximo DS (65%), aún insuficiente.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 21</td>
+                                    <td>900</td>
+                                    <td>60.3%</td>
+                                    <td>$64.80</td>
+                                    <td>59 km</td>
+                                    <td>Bloqueo vial eleva costo por parada.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sem 22</td>
+                                    <td>820</td>
+                                    <td>61.4%</td>
+                                    <td>$62.40</td>
+                                    <td>54 km</td>
+                                    <td>Baja densidad confirma problema estructural.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="card card-accent" style="padding: 10px;">
+                            <div style="font-weight: 700; font-size: 12px; color: #0f172a;">4.1 Causa Raíz e Hipótesis</div>
+                            <p style="font-size: 11px; margin-top: 2px;">El problema no es circumstantial (lluvia/ferias). Es una <strong>falla estructural de poligonación</strong>: territorio muy extenso con poca densidad de paquetes.</p>
+                        </div>
+
+                        <div class="card" style="padding: 10px;">
+                            <div style="font-weight: 700; font-size: 12px; color: #0f172a;">4.2 Plan de Mejora & Métricas proyectadas</div>
+                            <ul style="font-size: 11px; padding-left: 14px; list-style: disc;">
+                                <li><strong>Re-clustering:</strong> Reducir polígono de MTY-02 y transferir áreas periféricas a MTY-01.</li>
+                                <li><strong>Impacto en Flota:</strong> Elevar rendimiento de <strong>6.8 a ~8.5 km/L</strong> y reducir $CPK$ significativamente.</li>
+                                <li><strong>Métricas Meta:</strong> Elevar <strong>DS a ≥78%</strong> y bajar <strong>CPS a ≤$44 MXN</strong> en <strong>3 semanas</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" style="padding: 10px; background-color: #0f172a; color: #ffffff;">
+                            <div style="font-weight: 700; font-size: 12px; color: #ffe600;">4.3 Stakeholders & 4.4 Monitoreo</div>
+                            <p style="font-size: 11px; color: #cbd5e1; margin-top: 2px;">
+                            <strong>Presentación:</strong> <em>Executive Deck</em> (3 slides) para Performance & Planning + Producto.<br>
+                            <strong>Herramienta:</strong> Pipeline automatizado en <strong>SQL + Looker Studio</strong> con alertas si DS &lt;75% o CPS &gt;$50.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Re-engineering Operativo & Monitoreo Automatizado</span>
+                <span>Diapositiva 7 de 8</span>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide8" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);">
+            <div class="slide-header">
+                <h2 class="slide-title">5. Conclusiones y Propuesta de Valor</h2>
+                <span class="slide-tag">ENFOQUE GERENCIAL SENIOR</span>
+            </div>
+
+            <div class="content-area" style="justify-content: center; gap: 20px;">
+                <div class="grid-3">
+                    <div class="card" style="border-top: 4px solid #0f172a; text-align: center; padding: 24px 16px;">
+                        <div style="font-size: 32px; color: #0f172a; margin-bottom: 12px;"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3 style="justify-content: center; font-size: 16px; margin-bottom: 8px;">Visión Sistémica</h3>
+                        <p style="font-size: 12px; color: #64748b;">Las eficiencias sostenibles no se logran apagando fuegos diarios, sino corrigiendo la arquitectura de datos, la poligonación y las reglas del algoritmo de ruteo.</p>
+                    </div>
+
+                    <div class="card" style="border-top: 4px solid #ffe600; text-align: center; padding: 24px 16px;">
+                        <div style="font-size: 32px; color: #d97706; margin-bottom: 12px;"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 style="justify-content: center; font-size: 16px; margin-bottom: 8px;">Criterio Data-Driven</h3>
+                        <p style="font-size: 12px; color: #64748b;">Equilibrio constante entre el costo financiero unitario (CPS), las métricas de flota (CPK, km/L) y el nivel de servicio al usuario (DS/SLA).</p>
+                    </div>
+
+                    <div class="card" style="border-top: 4px solid #10b981; text-align: center; padding: 24px 16px;">
+                        <div style="font-size: 32px; color: #10b981; margin-bottom: 12px;"><i class="fa-solid fa-handshake-simple"></i></div>
+                        <h3 style="justify-content: center; font-size: 16px; margin-bottom: 8px;">Cultura Mercado Libre</h3>
+                        <p style="font-size: 12px; color: #64748b;">Priorización por impacto de negocio (<em>Bias for Action</em>), protección obsesiva de Clientes VIP y resolución de cuellos de botella con mentalidad de dueño.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent" style="text-align: center; padding: 20px; margin-top: 10px;">
+                    <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">
+                        "Transformando desafíos complejos de Última Milla en ventaja competitiva escalar."
+                    </div>
+                    <div style="font-size: 13px; color: #475569; font-weight: 600;">
+                        Juan Pablo Soto Maldonado | Ingeniero Industrial & Supply Chain Specialist
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <span>Work Sample Evaluated - Mercado Libre Operations</span>
+                <span>Diapositiva 8 de 8</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-nav" id="interactive-nav">
+        <button class="nav-btn" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+        <span class="slide-counter" id="slide-num">Slide 1 de 8</span>
+        <button class="nav-btn" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 8;
+
+        function updateSlideDisplay() {
+            document.querySelectorAll('.slide-container').forEach((slide, idx) => {
+                if (idx + 1 === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+            document.getElementById('slide-num').innerText = `Slide ${currentSlide} de ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlideDisplay();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlideDisplay();
+            }
+        }
+
+        function toggleViewMode() {
+            document.body.classList.toggle('mode-presentation');
+            const modeText = document.getElementById('mode-text');
+            const nav = document.getElementById('interactive-nav');
+            if (document.body.classList.contains('mode-presentation')) {
+                modeText.innerText = "Ver Todas las Slides";
+                nav.style.display = "flex";
+                updateSlideDisplay();
+            } else {
+                modeText.innerText = "Modo Presentación";
+                nav.style.display = "none";
+            }
+        }
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (document.body.classList.contains('mode-presentation')) {
+                if (e.key === 'ArrowRight' || e.key === 'Space') {
+                    nextSlide();
+                } else if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                }
+            }
+        });
+    </script>
+</body>
+</html># presentacion-meli
